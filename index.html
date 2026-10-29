@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Warm Lion Finance Inc.</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;color:#1f2937;background:#f7f9fc;line-height:1.6}
+header{background:#123b6d;color:white;padding:18px 7%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10}
+.logo{font-size:20px;font-weight:700}
+nav a{color:white;text-decoration:none;margin-left:18px;font-size:14px}
+.hero{padding:70px 7%;background:linear-gradient(135deg,#123b6d,#1769aa);color:white}
+.hero h1{font-size:42px;max-width:700px;margin-bottom:15px}
+.hero p{max-width:650px;font-size:18px;margin-bottom:25px}
+.btn{display:inline-block;background:white;color:#123b6d;padding:12px 22px;border-radius:8px;text-decoration:none;font-weight:700}
+section{padding:55px 7%;max-width:1100px;margin:auto}
+h2{text-align:center;margin-bottom:28px;font-size:30px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card{background:white;padding:25px;border-radius:12px;box-shadow:0 4px 18px rgba(0,0,0,.07)}
+.card h3{margin-bottom:8px;color:#123b6d}
+.requirements{background:#eef5fb}
+.requirements ul{max-width:650px;margin:auto;padding-left:22px}
+.notice{background:#fff8e6;border-left:5px solid #d49b00;padding:18px;border-radius:8px;margin-top:25px}
+form{max-width:650px;margin:auto;background:white;padding:25px;border-radius:12px;box-shadow:0 4px 18px rgba(0,0,0,.07)}
+label{display:block;margin:12px 0 5px;font-weight:600}
+input,select,textarea{width:100%;padding:12px;border:1px solid #ccd5df;border-radius:7px}
+button{margin-top:18px;width:100%;padding:13px;border:0;border-radius:8px;background:#123b6d;color:white;font-size:16px;font-weight:700}
+footer{background:#102f50;color:white;text-align:center;padding:30px 7%;font-size:14px}
+.small{font-size:13px;color:#667085}
+@media(max-width:700px){.hero h1{font-size:32px}nav{display:none}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Warm Lion Finance Inc.</div>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#requirements">Requirements</a>
+    <a href="#apply">Apply</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Flexible Loan Solutions for Your Financial Needs</h1>
+  <p>Explore our available loan services and submit an application for evaluation. Loan approval, rates, terms, and fees are subject to applicable policies and verification.</p>
+  <a class="btn" href="#apply">Apply for Evaluation</a>
+</section>
+
+<section id="services">
+  <h2>Our Loan Services</h2>
+  <div class="cards">
+    <div class="card"><h3>Personal Loan</h3><p>For eligible personal financial needs, subject to assessment.</p></div>
+    <div class="card"><h3>Business Loan</h3><p>Financing options for qualified business-related needs.</p></div>
+    <div class="card"><h3>Emergency Loan</h3><p>For urgent financial needs, subject to qualification.</p></div>
+    <div class="card"><h3>Student Loan</h3><p>Financial assistance options for eligible education-related expenses.</p></div>
+  </div>
+</section>
+
+<section id="requirements" class="requirements">
+  <h2>Basic Requirements</h2>
+  <ul>
+    <li>Two valid government-issued IDs</li>
+    <li>Proof of income or other acceptable financial documents</li>
+    <li>Completed application information</li>
+    <li>Additional documents may be requested during verification</li>
+  </ul>
+  <div class="notice">
+    <strong>Important:</strong> Approval is not guaranteed. Review all loan terms, interest, charges, payment schedules, and applicable disclosures before accepting any offer. Never send money or sensitive information until you have independently verified the lender and the transaction.
+  </div>
+</section>
+
+<section id="apply">
+  <h2>Loan Application</h2>
+  <form onsubmit="event.preventDefault(); alert('Application form demo only. Connect this form to your secure application system before collecting real customer information.');">
+    <label>Full Name</label>
+    <input type="text" placeholder="Enter your full name" required>
+    <label>Mobile Number</label>
+    <input type="tel" placeholder="09XXXXXXXXX" required>
+    <label>Email Address</label>
+    <input type="email" placeholder="you@example.com">
+    <label>Loan Type</label>
+    <select required>
+      <option value="">Select loan type</option>
+      <option>Personal Loan</option>
+      <option>Business Loan</option>
+      <option>Emergency Loan</option>
+      <option>Student Loan</option>
+    </select>
+    <label>Requested Amount</label>
+    <input type="number" min="1" placeholder="₱">
+    <label>Message</label>
+    <textarea rows="4" placeholder="Tell us briefly about your loan request"></textarea>
+    <button type="submit">Submit Application</button>
+    <p class="small" style="margin-top:12px">Demo form: do not enter IDs, passwords, bank PINs, OTPs, or other highly sensitive information here.</p>
+  </form>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p style="text-align:center">Warm Lion Finance Inc.<br>
+  Email: your-email@example.com<br>
+  Phone: 09XXXXXXXXX</p>
+</section>
+
+<footer>
+  © 2026 Warm Lion Finance Inc. All rights reserved.<br>
+  <span class="small">Replace the placeholder contact details and publish only with accurate business, licensing, fee, privacy, and lending disclosures.</span>
+</footer>
+
+</body>
+</html>
